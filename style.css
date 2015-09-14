@@ -164,6 +164,7 @@ select::-ms-expand {
 }
 div.paragraph ul li {
   list-style: none !important;
+  list-style-type: none !important;
 }
 div.paragraph ul li:before {
   content: '';
