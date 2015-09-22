@@ -162,6 +162,7 @@ select::-ms-expand {
   font-weight: normal;
   line-height: normal;
 }
+div.paragraph ul,
 div.paragraph ul li {
   list-style: none !important;
   list-style-type: none !important;
@@ -176,6 +177,47 @@ div.paragraph ul li:before {
   margin-top: .8em;
   margin-left: -1.3em;
 }
+ul#anchor-list,
+ul#anchor-list li {
+  list-style: none !important;
+  list-style-type: none !important;
+  margin: 0;
+}
+
+ul#anchor-list li a {
+  background-color: transparent;
+  border-bottom: 1px solid #ccc;
+  display: block;
+  padding: 5px;
+
+  -webkit-transition: all .1s ease;
+  -moz-transition: all .1s ease;
+  -o-transition: all .1s ease;
+  transition: all .1s ease;
+}
+
+ul#anchor-list li a:hover,
+ul#anchor-list li a:active,
+ul#anchor-list li a:focus {
+  background-color: #eee;
+}
+
+ul#anchor-list li:last-child a {
+  border-bottom: 0;
+}
+
+ul#anchor-list li:before {
+  content: '';
+  display: none;
+  background: none;
+  height: 0;
+  width: 0;
+  position: absolute;
+  margin-top: 0;
+  margin-left: 0;
+}
+
+
 input#navTrigger {
   display: none;
 }
@@ -694,9 +736,10 @@ span.form-radio-container {
 .wslide-caption .wslide-caption-text {
   text-shadow: none;
   font-family: 'Lato', sans-serif;
-  font-size: 1.3em;
-  font-weight: 300;
+  font-size: 1em;
+  font-weight: 500;
   line-height: 1.4em;
+  margin: 2px auto;
 }
 .galleryCaptionHover .galleryCaptionHolder .galleryCaptionInnerText,
 .wslide-caption .wslide-caption-text {
